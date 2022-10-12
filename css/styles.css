@@ -303,6 +303,22 @@ img {
   /* text-align: center; */
 }
 
+/* клієнти */
+
+.clients-list {
+  display: flex;
+}
+
+.client-item {
+}
+
+.client-box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 /* секція Портфоліо */
 
 .projects-filter {
