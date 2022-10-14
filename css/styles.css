@@ -12,6 +12,7 @@
   --footer-bg: #2f303a;
   --text-footer-color: rgba(255, 255, 255, 0.6);
   --hero-bg: #c4c4c4;
+  --hero-bg-gradient: rgba(47, 48, 58, 0.4);
 }
 
 /* * {
@@ -171,9 +172,8 @@ img {
 }
 
 .contact-link {
-  display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  display: flex;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -196,24 +196,22 @@ img {
 .hero {
   background-color: var(--hero-bg);
   text-align: center;
-
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
 }
 
-.thumb {
-  content: "";
-  display: block;
-  margin: 0 auto;
+.hero-image {
+  background-image: linear-gradient(
+      to right,
+      var(--hero-bg-gradient),
+      var(--hero-bg-gradient)
+    ),
+    url(../images/hero-bg-image.jpg);
   width: 1600px;
-  height: 600px;
-  background-image: url(../images/hero-bg-image.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: rgba(47, 48, 58, 0.4); */
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -237,7 +235,7 @@ img {
 
   background-color: var(--accent-color);
   color: var(--header-bg);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   font-weight: 700;
@@ -332,6 +330,12 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
+
+.team-social-list {
+  display: flex;
+}
+
+.social-link
 
 /* клієнти */
 
