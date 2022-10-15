@@ -16,9 +16,9 @@
   --social-links-color: #afb1b8;
 }
 
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 body {
   background-color: var(--header-bg);
@@ -343,16 +343,24 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  padding: 12px;
   border-radius: 50%;
+  background-color: var(--header-bg);
+  color: var(--client-section-grey);
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  --icon-color: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--header-bg);
 }
 
 /* клієнти */
@@ -471,6 +479,12 @@ img {
   background-color: var(--footer-bg);
 }
 
+.footer-flex {
+  display: flex;
+  gap: 70px;
+  /* align-items: flex-start; */
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -511,4 +525,38 @@ img {
 .address-link.secondary:hover,
 .address-link.secondary:focus {
   color: var(--accent-color);
+}
+
+.footer-socials-title {
+  margin-bottom: 20px;
+  color: var(--header-bg);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--header-bg);
+}
+
+.footer-social-icon {
+  --icon-color: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
