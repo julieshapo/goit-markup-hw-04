@@ -53,8 +53,18 @@ ol {
   padding-left: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -87,7 +97,6 @@ img {
   font-family: inherit;
   font-size: 16px;
   text-align: center;
-  cursor: pointer;
 }
 
 .section {
@@ -262,7 +271,8 @@ img {
 }
 
 .features-item {
-  max-width: 270px;
+  /* max-width: 270px; */
+  flex-basis: ((100%-90px)/4);
 }
 
 .features-img {
